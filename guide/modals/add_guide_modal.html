@@ -1,0 +1,92 @@
+<div class="modal fade" name="guideaddmodal" id="guideaddmodal" tabindex="-1" role="dialog" aria-labelledby="guideaddmodal" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-xl" role="document" >
+        <form method="POST" id="guide_form" enctype="multipart/form-data">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="guideaddmodalTitle">Add new Guide</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="container">
+                        <div class="row">
+                            <div class = "col-md-6">
+                                <div class="form-group">
+                                    <label>Record Entered on: </label>
+                                    <input class="form-control" type="text" id="Datetimestamp" name="Datetimestamp" placeholder="Readonly input here..." readonly>
+                                </div>
+                            </div>
+
+                            <!-- <div class = "col-md-6">
+                                <div class="form-group">
+                                    <label>Guide ID: </label>
+                                    <input type="text" class="form-control" id="GuideID" name="GuideID" placeholder="Readonly input here..." readonly>
+                                </div>
+                            </div> -->
+
+                            <div class = "col-md-6">
+                                <div class="form-group">
+                                    <!-- <label>Guide Name</label> -->
+                                    <input type="text" class="form-control" id="GuideName" name="GuideName" placeholder="Enter Guide Name">
+                                </div>
+                            </div>
+
+                            <div class = "col-md-6">
+                                <div class="form-group">
+                                    <!-- <label>House or Apartment #: </label> -->
+                                    <input type="text" class="form-control" id="Address" name="Address" placeholder="Enter Address">
+                                </div>
+                            </div>
+
+                            <div class = "col-md-6">
+                                <div class="form-group">
+                                    <!-- <label>City: </label> -->
+                                    <input type="text" class="form-control" id="City" name="City" placeholder="Enter City">
+                                </div>
+                            </div>
+                            <div class = "col-md-6">
+                                <div class="form-group">
+                                    <!-- <label>Province: </label> -->
+                                    <input type="text" class="form-control" id="Province" name="Province" placeholder="Enter Province">
+                                </div>
+                            </div>
+                            <div class = "col-md-6">
+                                <div class="form-group">
+                                    <!-- <label>Postal Code: </label> -->
+                                    <input type="text" class="form-control" id="PostalCode" name="PostalCode" placeholder="Enter Postal Code">
+                                </div>
+                            </div>
+                            <div class = "col-md-6">
+                                <div class="form-group">
+                                    <!-- <label>Country: </label> -->
+                                    <input type="text" class="form-control" id="Country" name="Country" placeholder="Enter Country">
+                                </div>
+                            </div>
+                            
+                            <div class = "col-md-6">
+                                <div class="form-group">
+                                    <!-- <label>Cell Number: </label> -->
+                                    <input type="text" class="form-control" id="CellNumber" name="CellNumber" placeholder="Enter Cell Number">
+                                </div>
+                            </div>
+                            
+                            <div class = "col-md-6">
+                                <div class="form-group">
+                                    <!-- <label>Personal Email Address: </label> -->
+                                    <input type="text" class="form-control" id="Email" name="Email" placeholder="Enter Personal Email Address">
+                                </div>
+                            </div>  
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <input type="hidden" name="GuideID" id="GuideID">
+                    <input type="hidden" name="guide_operation" id="guide_operation">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <input type="submit" name="guide_action" id="guide_action" value="Add" class="btn btn-success">
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

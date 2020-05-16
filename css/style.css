@@ -1,0 +1,22 @@
+@import "https://use.fontawesome.com/releases/v5.5.0/css/all.css";
+body{
+    margin:0;
+    padding:0;
+    background-color:#43494e;
+    font-family: sans-serif;
+}
+.box{
+    width:1270px;
+    padding:10px;
+    background-color:#fff;
+    border:1px solid #ccc;
+    border-radius:5px;
+    margin-top:5px;
+}
+.box h1{
+    font-size: 40px;
+    border-bottom: 4px solid #f2812e;
+    vertical-align: middle;
+    text-align: center; 
+    padding-bottom: 7px;
+}
