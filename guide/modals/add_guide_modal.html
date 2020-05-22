@@ -1,6 +1,6 @@
 <div class="modal fade" name="guideaddmodal" id="guideaddmodal" tabindex="-1" role="dialog" aria-labelledby="guideaddmodal" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered modal-xl" role="document" >
-        <form method="POST" id="guide_form" enctype="multipart/form-data">
+    <div class="modal-dialog modal-lg" role="document" >
+        <form method="POST" id="guide_form" enctype="multipart/form-data" class="needs-validation" novalidate>
             <div class="modal-content">
                 <div class="modal-header">
                     <h5 class="modal-title" id="guideaddmodalTitle">Add new Guide</h5>
@@ -9,74 +9,87 @@
                     </button>
                 </div>
                 <div class="modal-body">
-                    <div class="container">
-                        <div class="row">
-                            <div class = "col-md-6">
-                                <div class="form-group">
-                                    <label>Record Entered on: </label>
-                                    <input class="form-control" type="text" id="Datetimestamp" name="Datetimestamp" placeholder="Readonly input here..." readonly>
-                                </div>
-                            </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label>Record Entered on: </label>
+                            <input class="form-control" type="text" id="Datetimestamp" name="Datetimestamp" placeholder="Readonly input here..." readonly>
+                        </div>
+                    </div>
 
-                            <!-- <div class = "col-md-6">
-                                <div class="form-group">
-                                    <label>Guide ID: </label>
-                                    <input type="text" class="form-control" id="GuideID" name="GuideID" placeholder="Readonly input here..." readonly>
-                                </div>
-                            </div> -->
+<!--                                 <div class="form-group">
+                            <label>Guide ID: </label>
+                            <input type="text" class="form-control" id="GuideID" name="GuideID" placeholder="Readonly input here..." readonly>
+                        </div> -->
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <!-- <label>Guide Name</label> -->
+                            <input type="text" class="form-control" pattern="[a-zA-Z _-.]+" id="GuideName" name="GuideName" placeholder="Guide Name" required>
+                            <div class="valid-feedback">
+                              Looks good!
+                            </div>
+                            <div class="invalid-feedback">Enter Guide Name</div>
+                        </div>
+                    </div>
 
-                            <div class = "col-md-6">
-                                <div class="form-group">
-                                    <!-- <label>Guide Name</label> -->
-                                    <input type="text" class="form-control" id="GuideName" name="GuideName" placeholder="Enter Guide Name">
-                                </div>
+                        <div class="form-group">
+                            <!-- <label>House or Apartment #: </label> -->
+                            <input type="text" class="form-control" patter="[a-zA-Z0-9 _-.]+" id="Address" name="Address" placeholder="Address" required>
+                            <div class="valid-feedback">
+                              Looks good!
                             </div>
+                            <div class="invalid-feedback">Enter alphabets and numbers only.</div>
+                        </div>
 
-                            <div class = "col-md-6">
-                                <div class="form-group">
-                                    <!-- <label>House or Apartment #: </label> -->
-                                    <input type="text" class="form-control" id="Address" name="Address" placeholder="Enter Address">
-                                </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-3">
+                            <!-- <label>City: </label> -->
+                            <input type="text" class="form-control" pattern="[a-zA-Z]+" id="City" name="City" placeholder="City" required>
+                            <div class="valid-feedback">
+                              Looks good!
                             </div>
-
-                            <div class = "col-md-6">
-                                <div class="form-group">
-                                    <!-- <label>City: </label> -->
-                                    <input type="text" class="form-control" id="City" name="City" placeholder="Enter City">
-                                </div>
+                            <div class="invalid-feedback">Enter alphabets only</div>
+                        </div>
+                        <div class="form-group col-md-3">
+                            <!-- <label>Province: </label> -->
+                            <input type="text" class="form-control" pattern="[a-zA-Z]+" id="Province" name="Province" placeholder="Province" required>
+                            <div class="valid-feedback">
+                              Looks good!
                             </div>
-                            <div class = "col-md-6">
-                                <div class="form-group">
-                                    <!-- <label>Province: </label> -->
-                                    <input type="text" class="form-control" id="Province" name="Province" placeholder="Enter Province">
-                                </div>
+                            <div class="invalid-feedback">Enter alphabets only</div>
+                        </div>
+                        <div class="form-group col-md-2">
+                            <!-- <label>Postal Code: </label> -->
+                            <input type="text" class="form-control" pattern="[ABCEGHJKLMNPRSTVXY]\d[ABCEGHJ-NPRSTV-Z][\-]?\d[ABCEGHJ-NPRSTV-Z]\d" id="PostalCode" name="PostalCode" placeholder="Postal Code" required>
+                            <div class="valid-feedback">
+                              Looks good!
                             </div>
-                            <div class = "col-md-6">
-                                <div class="form-group">
-                                    <!-- <label>Postal Code: </label> -->
-                                    <input type="text" class="form-control" id="PostalCode" name="PostalCode" placeholder="Enter Postal Code">
-                                </div>
+                            <div class="invalid-feedback">Format: A1B-2C3</div>
+                        </div>
+                        <div class="form-group col-md-3">
+                            <!-- <label>Country: </label> -->
+                            <input type="text" class="form-control" pattern="[a-zA-Z]+" id="Country" name="Country" placeholder="Country" required>
+                            <div class="valid-feedback">
+                              Looks good!
                             </div>
-                            <div class = "col-md-6">
-                                <div class="form-group">
-                                    <!-- <label>Country: </label> -->
-                                    <input type="text" class="form-control" id="Country" name="Country" placeholder="Enter Country">
-                                </div>
+                            <div class="invalid-feedback">Enter alphabets only</div>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-4">
+                            <!-- <label>Cell Number: </label> -->
+                            <input type="text" class="form-control" pattern="\d{3}[\-]\d{3}[\-]\d{4}" id="CellNumber" name="CellNumber" placeholder="Cell Number" required>
+                            <div class="valid-feedback">
+                              Looks good!
                             </div>
-                            
-                            <div class = "col-md-6">
-                                <div class="form-group">
-                                    <!-- <label>Cell Number: </label> -->
-                                    <input type="text" class="form-control" id="CellNumber" name="CellNumber" placeholder="Enter Cell Number">
-                                </div>
+                            <div class="invalid-feedback">Home or Cell Number is required. Format: 123-456-7890</div>
+                        </div>
+                        <div class="form-group col-md-4">
+                            <!-- <label>Personal Email Address: </label> -->
+                            <input type="text" class="form-control" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" id="Email" name="Email" placeholder="Email Address" required>
+                            <div class="valid-feedback">
+                              Looks good!
                             </div>
-                            
-                            <div class = "col-md-6">
-                                <div class="form-group">
-                                    <!-- <label>Personal Email Address: </label> -->
-                                    <input type="text" class="form-control" id="Email" name="Email" placeholder="Enter Personal Email Address">
-                                </div>
-                            </div>  
+                            <div class="invalid-feedback">At least 1 @ and 1 dot</div>
                         </div>
                     </div>
                 </div>
@@ -90,3 +103,33 @@
         </form>
     </div>
 </div>
+<script>
+// Example starter JavaScript for disabling form submissions if there are invalid fields
+(function() {
+  'use strict';
+  window.addEventListener('load', function() {
+    // Fetch all the forms we want to apply custom Bootstrap validation styles to
+    var forms = document.getElementsByClassName('needs-validation');
+    // Loop over them and prevent submission
+    var validation = Array.prototype.filter.call(forms, function(form) {
+      form.addEventListener('submit', function(event) {
+        if (form.checkValidity() === false) {
+          event.preventDefault();
+          event.stopPropagation();
+        }
+        form.classList.add('was-validated');
+      }, false);
+    });
+  }, false);
+})();
+new Cleave('#CellNumber', {
+    phone: true,
+    delimiter: '-',
+    phoneRegionCode: 'CA'
+});
+new Cleave('#PostalCode', {
+    delimiter: '-',
+    blocks: [3, 3],
+    uppercase: true
+});
+</script>

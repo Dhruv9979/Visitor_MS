@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
     <head>
+      <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <meta name="HandheldFriendly" content="true">
       <meta charset="utf-8">
       <title>َMandir</title>
       <link rel="stylesheet" href="style.css">
@@ -23,6 +26,5 @@
           </div>
         </form>
       </div>
-      
     </body>
 </html>

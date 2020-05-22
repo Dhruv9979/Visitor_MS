@@ -3,13 +3,13 @@
     include('function.php');
     if(isset($_POST["visit_operation"]))
     {
+      $GuideRequired = -1;
+      $VisitToMuseum = -1;
+      $MealStatus = 0;
         if($_POST["visit_operation"] == "Add")
         {
             $DateVisit = date("Y-m-d H-i-s",strtotime($_POST['DateVisit']));
             $TimeVisit = date("Y-m-d H-i-s",strtotime($_POST['TimeVisit']));
-            $GuideRequired = -1;
-            $VisitToMuseum = -1;
-            $MealStatus = false;
             if(isset($_POST['GuideRequired']))
             {
                 $GuideRequired = 1;
@@ -22,9 +22,14 @@
             }
             if(isset($_POST['MealStatus']))
             {
-                $MealStatus = true;
+                $MealStatus = 1;
                 // echo $VisitToMuseum;
             }
+//             $TotalVisitors = !empty($_POST['TotalVisitors']) ? "'".$_POST['TotalVisitors']."'" : NULL;
+//             $Male = !empty($_POST['Male']) ? "'".$_POST['Male']."'" : NULL;
+//             $Female = !empty($_POST['Female']) ? "'".$_POST['Female']."'" : NULL;
+//             $Handicaped = !empty($_POST['Handicaped']) ? "'".$_POST['Handicaped']."'" : NULL;
+//             $Exhibition_Seva = !empty($_POST['Exhibition_Seva']) ? "'".$_POST['Exhibition_Seva']."'" : NULL;
             // $DateVisit = $_POST["Datevisit"];
             $DateVisit = date("Y-m-d",strtotime($_POST['DateVisit']));
             $TimeVisit = date("Y-m-d H:i:s",strtotime($_POST['TimeVisit']));
@@ -47,14 +52,14 @@
                         ':Day' => $_POST["Day"],
                         ':GroupName' => $_POST["GroupName"],
                         ':GroupType' => $_POST["GroupType"],
-                        ':TotalVisitors' => $_POST["TotalVisitors"],
-                        ':Male' => $_POST["Male"],
-                        ':Female' => $_POST["Female"],
-                        ':Handicaped' => $_POST["Handicaped"],
+                        ':TotalVisitors' => $_POST['TotalVisitors'],
+                        ':Male' => $_POST['Male'],
+                        ':Female' => $_POST['Female'],
+                        ':Handicaped' => $_POST['Handicaped'],
                         ':GuideRequired' => $GuideRequired,
                         ':GuideName' => $_POST["GuideName"],
                         ':VisitToMuseum' => $VisitToMuseum,
-                        ':Exhibition_Seva' => $_POST["Exhibition_Seva"],
+                        ':Exhibition_Seva' => $_POST['Exhibition_Seva'],
                         ':MealStatus' => $MealStatus,
                         ':Status' => $_POST["Status"],
                         ':GroupInfo' => $_POST["GroupInfo"],
@@ -99,9 +104,6 @@
             $DateVisit = date("Y-m-d H-i-s",strtotime($_POST['DateVisit']));
             $TimeVisit = date("Y-m-d H-i-s",strtotime($_POST['TimeVisit']));
             // echo ('GroupID: '.$_POST["GroupID"]); 
-            $GuideRequired = -1;
-            $VisitToMuseum = -1;
-            $MealStatus = false;
             if(isset($_POST['GuideRequired']))
             {
                 $GuideRequired = 1;
@@ -112,8 +114,13 @@
             }
             if(isset($_POST['MealStatus']))
             {
-                $MealStatus = true;
+                $MealStatus = 1;
             }
+//             $TotalVisitors = !empty($_POST['TotalVisitors']) ? "'".$_POST['TotalVisitors']."'" : NULL;
+//             $Male = !empty($_POST['Male']) ? "'".$_POST['Male']."'" : NULL;
+//             $Female = !empty($_POST['Female']) ? "'".$_POST['Female']."'" : NULL;
+//             $Handicaped = !empty($_POST['Handicaped']) ? "'".$_POST['Handicaped']."'" : NULL;
+//             $Exhibition_Seva = !empty($_POST['Exhibition_Seva']) ? "'".$_POST['Exhibition_Seva']."'" : NULL;
             $Datetimestamp = date('Y-m-d H:i:s');
             try {
                 
@@ -154,10 +161,10 @@
                         ':Day' => $_POST["Day"],
                         ':GroupName' => $_POST["GroupName"],
                         ':GroupType' => $_POST["GroupType"],
-                        ':TotalVisitors' => $_POST["TotalVisitors"],
-                        ':Male' => $_POST["Male"],
-                        ':Female' => $_POST["Female"],
-                        ':Handicaped' => $_POST["Handicaped"],
+                        ':TotalVisitors' => $_POST['TotalVisitors'],
+                        ':Male' => $_POST['Male'],
+                        ':Female' => $_POST['Female'],
+                        ':Handicaped' => $_POST['Handicaped'],
                         ':GuideRequired' => $GuideRequired,
                         ':GuideName' => $_POST["GuideName"],
                         ':VisitToMuseum' => $VisitToMuseum,
@@ -176,7 +183,7 @@
                 );
                 $statement->closeCursor();
                 $number_filter_row = $statement->rowCount();
-                $done = $statement !== false ? true : false;
+                $done = $statement !== 0 ? 1 : 0;
             }
             catch(PDOException $e) {
                 console.log($e->getMessage(), $e->getCode(), array('exception' => $e));

@@ -3,28 +3,18 @@
     include('function.php');
     if(isset($_POST["operation"]))
     {
+      $Diwaliinvites = 0;
+      $SubscribedToMailingList = 0;
         if($_POST["operation"] == "Add")
         {
-            $Diwaliinvites = false;
-            $SubscribedToMailingList = false;
             if(isset($_POST['Diwaliinvites']))
             {
-                $Diwaliinvites = true;
-                // echo $Diwaliinvites;
-            }
-            else
-            {
-                $Diwaliinvites = false;
+                $Diwaliinvites = 1;
                 // echo $Diwaliinvites;
             }
             if(isset($_POST['SubscribedToMailingList']))
             {
-                $SubscribedToMailingList = true;
-                // echo $SubscribedToMailingList;
-            }
-            else
-            {
-                $SubscribedToMailingList = false;
+                $SubscribedToMailingList = 1;
                 // echo $SubscribedToMailingList;
             }
             $Datetimestamp = date('Y-m-d H:i:s');
@@ -95,16 +85,14 @@
         { 
             echo print_r('OrganizerID: '.$_POST["OrganizerID"]); 
             $Datetimestamp = date('Y-m-d H:i:s');
-            $Diwaliinvites = false;
-            $SubscribedToMailingList = false;
             if(isset($_POST['Diwaliinvites']))
             {
-                $Diwaliinvites = true;
+                $Diwaliinvites = 1;
                 // echo $Diwaliinvites;
             }
             if(isset($_POST['SubscribedToMailingList']))
             {
-                $SubscribedToMailingList = true;
+                $SubscribedToMailingList = 1;
                 // echo $SubscribedToMailingList;
             }
             try {
@@ -157,7 +145,7 @@
                 );
                 $statement->closeCursor();
                 $number_filter_row = $statement->rowCount();
-                $done = $statement !== false ? true : false;
+                $done = $statement !== 0 ? 1 : 0;
             }
             catch(PDOException $e) {
                 console.log($e->getMessage(), $e->getCode(), array('exception' => $e));

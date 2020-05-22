@@ -19,7 +19,7 @@
             $output["TotalVisitors"] = $row["TotalVisitors"];
             $output["Male"] = $row["Male"];
             $output["Female"] = $row["Female"];
-            $output["handicaped"] = $row["handicaped"];
+            $output["Handicaped"] = $row["Handicaped"];
             $output["GuideRequired"] = $row["GuideRequired"];
             $output["GuideName"] = $row["GuideName"];
             $output["VisitToMuseum"] = $row["VisitToMuseum"];

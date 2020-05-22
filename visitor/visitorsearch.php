@@ -25,16 +25,20 @@ include('../dropdown.php');
         <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script> -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
         <link rel="stylesheet" href="https://cdn.datatables.net/1.10.20/css/dataTables.bootstrap4.min.css"></link>
-        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/timepicker/1.3.5/jquery.timepicker.min.css">
+<!--         <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/timepicker/1.3.5/jquery.timepicker.min.css"> -->
         <link rel="stylesheet" href="../css/style.css">
         <link rel="stylesheet" href="../css/datepicker.css">
-        
+  
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
         <script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
         <script src="https://cdn.datatables.net/1.10.20/js/dataTables.bootstrap4.min.js"></script>
-        <script src="//cdnjs.cloudflare.com/ajax/libs/timepicker/1.3.5/jquery.timepicker.min.js"></script>
+<!--         <script src="//cdnjs.cloudflare.com/ajax/libs/timepicker/1.3.5/jquery.timepicker.min.js"></script> -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/cleave.js/1.5.8/cleave.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/cleave.js/1.5.8/cleave-esm.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/cleave.js/1.5.8/addons/cleave-phone.ca.js"></script>
         <script src="../js/datepicker.js"></script>
     </head>
     <body>
@@ -138,7 +142,7 @@ $(document).ready(function(){
             type:"POST",
         },
         "columnDefs":[{
-            "targets":[0, 3, 4],
+            "targets":[0, 1, 2, 3, 4],
             "orderable":false,
             },
         ],
@@ -153,27 +157,19 @@ $(document).ready(function(){
 
     $(document).on('submit', '#insert_form', function(event){
         event.preventDefault();
-        var GroupName = $('#GroupName').val();
-        if(GroupName != '')
-        {
-            $.ajax({
-            url:"insert.php",
-            type:'POST',
-            data:new FormData(this),
-            contentType:false,
-            processData:false,
-            success:function(data){
-                alert(data);
-                $('#insert_form')[0].reset();
-                $('#visitoraddmodal').modal('hide');
-                dataTable.ajax.reload();
-                }
-            });
-        }
-        else
-        {
-            alert("GroupName is required");
-        }
+        $.ajax({
+        url:"insert.php",
+        type:'POST',
+        data:new FormData(this),
+        contentType:false,
+        processData:false,
+        success:function(data){
+            alert(data);
+            $('#insert_form')[0].reset();
+            $('#visitoraddmodal').modal('hide');
+            dataTable.ajax.reload();
+            }
+        });
     });
     $(document).on('click', '.edit_data', function(){  
         var OrganizerID = $(this).attr("id");

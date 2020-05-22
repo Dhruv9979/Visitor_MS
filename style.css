@@ -8,9 +8,11 @@ body{
 }
 
 .transparent {
-  top: 100%;
-  left: 100%;
-  transform: translate(190%,25%);
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   zoom: 1;
   filter: alpha(opacity=50);
   background-color: rgba(255,255,255,0.5);
@@ -59,7 +61,6 @@ body{
   font-size: 18px;
   width: 80%;
   margin: 0 10px;
-  
 }
 /* .box #Username,.box #Password{
   border:0;
@@ -92,4 +93,31 @@ body{
   cursor: pointer;
   margin: 12px 0;
   margin-left: 30px;
+}
+    @media (max-width: 600px) {
+  body {
+    background-size: auto;
+/*     background-color: black;
+    background-image: none; */
+  }
+    .box h1{
+    margin-bottom: 10%;
+    margin-left: 25%;
+  }
+  .textbox{
+    width: 70%;
+    margin-left: 8%;
+    margin-right: 8%;
+  }
+  .textbox i{
+    width: 20px;
+  }
+  .textbox input{
+    width: 81%;
+    margin: 0;
+  }
+  .box #Login{
+    width: 70%;
+    margin-left: 15%;
+  }
 }

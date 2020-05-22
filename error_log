@@ -1,0 +1,199 @@
+[13-Mar-2020 19:21:42 UTC] PHP Parse error:  syntax error, unexpected '$pe' (T_VARIABLE) in /home/visitorstorontom/public_html/db.php on line 9
+[17-May-2020 22:01:11 UTC] PHP Fatal error:  Uncaught PDOException: Packets out of order. Expected 0 received 1. Packet size=96 in /home/visitorstorontom/public_html/db.php:5
+Stack trace:
+#0 /home/visitorstorontom/public_html/db.php(5): PDO->__construct('mysql:host=64.2...', 'visitorstoronto...', 'P0N6;!M+zF]f')
+#1 /home/visitorstorontom/public_html/login.php(3): require_once('/home/visitorst...')
+#2 {main}
+
+Next PDOException: SQLSTATE[HY000] [2006] MySQL server has gone away in /home/visitorstorontom/public_html/db.php:5
+Stack trace:
+#0 /home/visitorstorontom/public_html/db.php(5): PDO->__construct('mysql:host=64.2...', 'visitorstoronto...', 'P0N6;!M+zF]f')
+#1 /home/visitorstorontom/public_html/login.php(3): require_once('/home/visitorst...')
+#2 {main}
+  thrown in /home/visitorstorontom/public_html/db.php on line 5
+[17-May-2020 22:01:21 UTC] PHP Fatal error:  Uncaught PDOException: Packets out of order. Expected 0 received 1. Packet size=96 in /home/visitorstorontom/public_html/db.php:5
+Stack trace:
+#0 /home/visitorstorontom/public_html/db.php(5): PDO->__construct('mysql:host=64.2...', 'visitorstoronto...', 'P0N6;!M+zF]f')
+#1 /home/visitorstorontom/public_html/login.php(3): require_once('/home/visitorst...')
+#2 {main}
+
+Next PDOException: SQLSTATE[HY000] [2006] MySQL server has gone away in /home/visitorstorontom/public_html/db.php:5
+Stack trace:
+#0 /home/visitorstorontom/public_html/db.php(5): PDO->__construct('mysql:host=64.2...', 'visitorstoronto...', 'P0N6;!M+zF]f')
+#1 /home/visitorstorontom/public_html/login.php(3): require_once('/home/visitorst...')
+#2 {main}
+  thrown in /home/visitorstorontom/public_html/db.php on line 5
+[22-May-2020 16:13:32 UTC] PHP Fatal error:  Uncaught PDOException: Packets out of order. Expected 0 received 1. Packet size=96 in /home/visitorstorontom/public_html/db.php:5
+Stack trace:
+#0 /home/visitorstorontom/public_html/db.php(5): PDO->__construct('mysql:host=64.2...', 'visitorstoronto...', 'P0N6;!M+zF]f')
+#1 /home/visitorstorontom/public_html/login.php(3): require_once('/home/visitorst...')
+#2 {main}
+
+Next PDOException: SQLSTATE[HY000] [2006] MySQL server has gone away in /home/visitorstorontom/public_html/db.php:5
+Stack trace:
+#0 /home/visitorstorontom/public_html/db.php(5): PDO->__construct('mysql:host=64.2...', 'visitorstoronto...', 'P0N6;!M+zF]f')
+#1 /home/visitorstorontom/public_html/login.php(3): require_once('/home/visitorst...')
+#2 {main}
+  thrown in /home/visitorstorontom/public_html/db.php on line 5
+[22-May-2020 16:13:42 UTC] PHP Fatal error:  Uncaught PDOException: Packets out of order. Expected 0 received 1. Packet size=96 in /home/visitorstorontom/public_html/db.php:5
+Stack trace:
+#0 /home/visitorstorontom/public_html/db.php(5): PDO->__construct('mysql:host=64.2...', 'visitorstoronto...', 'P0N6;!M+zF]f')
+#1 /home/visitorstorontom/public_html/login.php(3): require_once('/home/visitorst...')
+#2 {main}
+
+Next PDOException: SQLSTATE[HY000] [2006] MySQL server has gone away in /home/visitorstorontom/public_html/db.php:5
+Stack trace:
+#0 /home/visitorstorontom/public_html/db.php(5): PDO->__construct('mysql:host=64.2...', 'visitorstoronto...', 'P0N6;!M+zF]f')
+#1 /home/visitorstorontom/public_html/login.php(3): require_once('/home/visitorst...')
+#2 {main}
+  thrown in /home/visitorstorontom/public_html/db.php on line 5
+[22-May-2020 16:13:55 UTC] PHP Fatal error:  Uncaught PDOException: Packets out of order. Expected 0 received 1. Packet size=96 in /home/visitorstorontom/public_html/db.php:5
+Stack trace:
+#0 /home/visitorstorontom/public_html/db.php(5): PDO->__construct('mysql:host=64.2...', 'visitorstoronto...', 'P0N6;!M+zF]f')
+#1 /home/visitorstorontom/public_html/login.php(3): require_once('/home/visitorst...')
+#2 {main}
+
+Next PDOException: SQLSTATE[HY000] [2006] MySQL server has gone away in /home/visitorstorontom/public_html/db.php:5
+Stack trace:
+#0 /home/visitorstorontom/public_html/db.php(5): PDO->__construct('mysql:host=64.2...', 'visitorstoronto...', 'P0N6;!M+zF]f')
+#1 /home/visitorstorontom/public_html/login.php(3): require_once('/home/visitorst...')
+#2 {main}
+  thrown in /home/visitorstorontom/public_html/db.php on line 5
+[22-May-2020 16:14:19 UTC] PHP Fatal error:  Uncaught PDOException: Packets out of order. Expected 0 received 1. Packet size=96 in /home/visitorstorontom/public_html/db.php:5
+Stack trace:
+#0 /home/visitorstorontom/public_html/db.php(5): PDO->__construct('mysql:host=64.2...', 'visitorstoronto...', 'P0N6;!M+zF]f')
+#1 /home/visitorstorontom/public_html/login.php(3): require_once('/home/visitorst...')
+#2 {main}
+
+Next PDOException: SQLSTATE[HY000] [2006] MySQL server has gone away in /home/visitorstorontom/public_html/db.php:5
+Stack trace:
+#0 /home/visitorstorontom/public_html/db.php(5): PDO->__construct('mysql:host=64.2...', 'visitorstoronto...', 'P0N6;!M+zF]f')
+#1 /home/visitorstorontom/public_html/login.php(3): require_once('/home/visitorst...')
+#2 {main}
+  thrown in /home/visitorstorontom/public_html/db.php on line 5
+[22-May-2020 16:14:23 UTC] PHP Fatal error:  Uncaught PDOException: Packets out of order. Expected 0 received 1. Packet size=96 in /home/visitorstorontom/public_html/db.php:5
+Stack trace:
+#0 /home/visitorstorontom/public_html/db.php(5): PDO->__construct('mysql:host=64.2...', 'visitorstoronto...', 'P0N6;!M+zF]f')
+#1 /home/visitorstorontom/public_html/login.php(3): require_once('/home/visitorst...')
+#2 {main}
+
+Next PDOException: SQLSTATE[HY000] [2006] MySQL server has gone away in /home/visitorstorontom/public_html/db.php:5
+Stack trace:
+#0 /home/visitorstorontom/public_html/db.php(5): PDO->__construct('mysql:host=64.2...', 'visitorstoronto...', 'P0N6;!M+zF]f')
+#1 /home/visitorstorontom/public_html/login.php(3): require_once('/home/visitorst...')
+#2 {main}
+  thrown in /home/visitorstorontom/public_html/db.php on line 5
+[22-May-2020 16:14:28 UTC] PHP Fatal error:  Uncaught PDOException: Packets out of order. Expected 0 received 1. Packet size=96 in /home/visitorstorontom/public_html/db.php:5
+Stack trace:
+#0 /home/visitorstorontom/public_html/db.php(5): PDO->__construct('mysql:host=64.2...', 'visitorstoronto...', 'P0N6;!M+zF]f')
+#1 /home/visitorstorontom/public_html/login.php(3): require_once('/home/visitorst...')
+#2 {main}
+
+Next PDOException: SQLSTATE[HY000] [2006] MySQL server has gone away in /home/visitorstorontom/public_html/db.php:5
+Stack trace:
+#0 /home/visitorstorontom/public_html/db.php(5): PDO->__construct('mysql:host=64.2...', 'visitorstoronto...', 'P0N6;!M+zF]f')
+#1 /home/visitorstorontom/public_html/login.php(3): require_once('/home/visitorst...')
+#2 {main}
+  thrown in /home/visitorstorontom/public_html/db.php on line 5
+[22-May-2020 16:14:29 UTC] PHP Fatal error:  Uncaught PDOException: Packets out of order. Expected 0 received 1. Packet size=96 in /home/visitorstorontom/public_html/db.php:5
+Stack trace:
+#0 /home/visitorstorontom/public_html/db.php(5): PDO->__construct('mysql:host=64.2...', 'visitorstoronto...', 'P0N6;!M+zF]f')
+#1 /home/visitorstorontom/public_html/login.php(3): require_once('/home/visitorst...')
+#2 {main}
+
+Next PDOException: SQLSTATE[HY000] [2006] MySQL server has gone away in /home/visitorstorontom/public_html/db.php:5
+Stack trace:
+#0 /home/visitorstorontom/public_html/db.php(5): PDO->__construct('mysql:host=64.2...', 'visitorstoronto...', 'P0N6;!M+zF]f')
+#1 /home/visitorstorontom/public_html/login.php(3): require_once('/home/visitorst...')
+#2 {main}
+  thrown in /home/visitorstorontom/public_html/db.php on line 5
+[22-May-2020 16:14:38 UTC] PHP Fatal error:  Uncaught PDOException: Packets out of order. Expected 0 received 1. Packet size=96 in /home/visitorstorontom/public_html/db.php:5
+Stack trace:
+#0 /home/visitorstorontom/public_html/db.php(5): PDO->__construct('mysql:host=64.2...', 'visitorstoronto...', 'P0N6;!M+zF]f')
+#1 /home/visitorstorontom/public_html/login.php(3): require_once('/home/visitorst...')
+#2 {main}
+
+Next PDOException: SQLSTATE[HY000] [2006] MySQL server has gone away in /home/visitorstorontom/public_html/db.php:5
+Stack trace:
+#0 /home/visitorstorontom/public_html/db.php(5): PDO->__construct('mysql:host=64.2...', 'visitorstoronto...', 'P0N6;!M+zF]f')
+#1 /home/visitorstorontom/public_html/login.php(3): require_once('/home/visitorst...')
+#2 {main}
+  thrown in /home/visitorstorontom/public_html/db.php on line 5
+[22-May-2020 16:14:45 UTC] PHP Fatal error:  Uncaught PDOException: Packets out of order. Expected 0 received 1. Packet size=96 in /home/visitorstorontom/public_html/db.php:5
+Stack trace:
+#0 /home/visitorstorontom/public_html/db.php(5): PDO->__construct('mysql:host=64.2...', 'visitorstoronto...', 'P0N6;!M+zF]f')
+#1 /home/visitorstorontom/public_html/login.php(3): require_once('/home/visitorst...')
+#2 {main}
+
+Next PDOException: SQLSTATE[HY000] [2006] MySQL server has gone away in /home/visitorstorontom/public_html/db.php:5
+Stack trace:
+#0 /home/visitorstorontom/public_html/db.php(5): PDO->__construct('mysql:host=64.2...', 'visitorstoronto...', 'P0N6;!M+zF]f')
+#1 /home/visitorstorontom/public_html/login.php(3): require_once('/home/visitorst...')
+#2 {main}
+  thrown in /home/visitorstorontom/public_html/db.php on line 5
+[22-May-2020 16:15:03 UTC] PHP Fatal error:  Uncaught PDOException: Packets out of order. Expected 0 received 1. Packet size=96 in /home/visitorstorontom/public_html/db.php:5
+Stack trace:
+#0 /home/visitorstorontom/public_html/db.php(5): PDO->__construct('mysql:host=64.2...', 'visitorstoronto...', 'P0N6;!M+zF]f')
+#1 /home/visitorstorontom/public_html/login.php(3): require_once('/home/visitorst...')
+#2 {main}
+
+Next PDOException: SQLSTATE[HY000] [2006] MySQL server has gone away in /home/visitorstorontom/public_html/db.php:5
+Stack trace:
+#0 /home/visitorstorontom/public_html/db.php(5): PDO->__construct('mysql:host=64.2...', 'visitorstoronto...', 'P0N6;!M+zF]f')
+#1 /home/visitorstorontom/public_html/login.php(3): require_once('/home/visitorst...')
+#2 {main}
+  thrown in /home/visitorstorontom/public_html/db.php on line 5
+[22-May-2020 16:17:05 UTC] PHP Fatal error:  Uncaught PDOException: Packets out of order. Expected 0 received 1. Packet size=96 in /home/visitorstorontom/public_html/db.php:5
+Stack trace:
+#0 /home/visitorstorontom/public_html/db.php(5): PDO->__construct('mysql:host=64.2...', 'visitorstoronto...', 'P0N6;!M+zF]f')
+#1 /home/visitorstorontom/public_html/login.php(3): require_once('/home/visitorst...')
+#2 {main}
+
+Next PDOException: SQLSTATE[HY000] [2006] MySQL server has gone away in /home/visitorstorontom/public_html/db.php:5
+Stack trace:
+#0 /home/visitorstorontom/public_html/db.php(5): PDO->__construct('mysql:host=64.2...', 'visitorstoronto...', 'P0N6;!M+zF]f')
+#1 /home/visitorstorontom/public_html/login.php(3): require_once('/home/visitorst...')
+#2 {main}
+  thrown in /home/visitorstorontom/public_html/db.php on line 5
+[22-May-2020 16:23:43 UTC] PHP Fatal error:  Uncaught PDOException: Packets out of order. Expected 0 received 1. Packet size=96 in /home/visitorstorontom/public_html/db.php:5
+Stack trace:
+#0 /home/visitorstorontom/public_html/db.php(5): PDO->__construct('mysql:host=64.2...', 'visitorstoronto...', 'P0N6;!M+zF]f')
+#1 /home/visitorstorontom/public_html/login.php(3): require_once('/home/visitorst...')
+#2 {main}
+
+Next PDOException: SQLSTATE[HY000] [2006] MySQL server has gone away in /home/visitorstorontom/public_html/db.php:5
+Stack trace:
+#0 /home/visitorstorontom/public_html/db.php(5): PDO->__construct('mysql:host=64.2...', 'visitorstoronto...', 'P0N6;!M+zF]f')
+#1 /home/visitorstorontom/public_html/login.php(3): require_once('/home/visitorst...')
+#2 {main}
+  thrown in /home/visitorstorontom/public_html/db.php on line 5
+[22-May-2020 16:36:18 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user 'visitorstorontom_baps'@'server.aksharisolutions.com' (using password: YES) in /home/visitorstorontom/public_html/db.php:5
+Stack trace:
+#0 /home/visitorstorontom/public_html/db.php(5): PDO->__construct('mysql:host=198....', 'visitorstoronto...', 'visit123toronto')
+#1 /home/visitorstorontom/public_html/login.php(3): require_once('/home/visitorst...')
+#2 {main}
+  thrown in /home/visitorstorontom/public_html/db.php on line 5
+[22-May-2020 16:38:00 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user 'visitorstorontom_baps'@'server.aksharisolutions.com' (using password: YES) in /home/visitorstorontom/public_html/db.php:5
+Stack trace:
+#0 /home/visitorstorontom/public_html/db.php(5): PDO->__construct('mysql:host=198....', 'visitorstoronto...', 'visit123toronto')
+#1 /home/visitorstorontom/public_html/login.php(3): require_once('/home/visitorst...')
+#2 {main}
+  thrown in /home/visitorstorontom/public_html/db.php on line 5
+[22-May-2020 16:38:01 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user 'visitorstorontom_baps'@'server.aksharisolutions.com' (using password: YES) in /home/visitorstorontom/public_html/db.php:5
+Stack trace:
+#0 /home/visitorstorontom/public_html/db.php(5): PDO->__construct('mysql:host=198....', 'visitorstoronto...', 'visit123toronto')
+#1 /home/visitorstorontom/public_html/login.php(3): require_once('/home/visitorst...')
+#2 {main}
+  thrown in /home/visitorstorontom/public_html/db.php on line 5
+[22-May-2020 16:40:01 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user 'visitorstorontom_baps'@'server.aksharisolutions.com' (using password: YES) in /home/visitorstorontom/public_html/db.php:5
+Stack trace:
+#0 /home/visitorstorontom/public_html/db.php(5): PDO->__construct('mysql:host=198....', 'visitorstoronto...', 'visit123toronto')
+#1 /home/visitorstorontom/public_html/login.php(3): require_once('/home/visitorst...')
+#2 {main}
+  thrown in /home/visitorstorontom/public_html/db.php on line 5
+[22-May-2020 16:40:58 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user 'visitorstorontom_baps'@'server.aksharisolutions.com' (using password: YES) in /home/visitorstorontom/public_html/db.php:5
+Stack trace:
+#0 /home/visitorstorontom/public_html/db.php(5): PDO->__construct('mysql:host=198....', 'visitorstoronto...', 'visit123toronto')
+#1 /home/visitorstorontom/public_html/login.php(3): require_once('/home/visitorst...')
+#2 {main}
+  thrown in /home/visitorstorontom/public_html/db.php on line 5

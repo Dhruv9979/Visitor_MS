@@ -9,7 +9,7 @@
         WHERE Day = '".$_POST["Day"]."'ORDER BY GroupName";
         $statement = $connection->prepare($sql);
         $statement->execute();
-        $result = $statement->fetchAll();  
+        $result = $statement->fetchAll();
         foreach($result as $row)
         {       
         $output .= '<tr>  

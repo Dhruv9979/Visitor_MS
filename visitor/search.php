@@ -2,7 +2,7 @@
 <?php 
     include('../db.php');
 
-    $column = array('GroupName', 'View', 'Edit', 'Delete', 'Visit Info');
+    $column = array('Group Name', 'View', 'Edit', 'Delete', 'Visit Info');
     $output = array();
     $query = "SELECT * FROM tab_organizers ";
     
@@ -10,6 +10,7 @@
     {
         $query .= 'WHERE GroupName LIKE "%'.$_POST["search"]["value"].'%" ';
         $query .= 'OR City LIKE "%'.$_POST["search"]["value"].'%" ';
+        $query .= 'OR Telephone1 LIKE "%'.$_POST["search"]["value"].'%" ';
         $query .= 'OR Telephone2 LIKE "%'.$_POST["search"]["value"].'%" ';
     }
 
