@@ -164,7 +164,7 @@ $(document).ready(function(){
         contentType:false,
         processData:false,
         success:function(data){
-            alert(data);
+            // alert(data);
             $('#insert_form')[0].reset();
             $('#visitoraddmodal').modal('hide');
             dataTable.ajax.reload();
@@ -205,7 +205,7 @@ $(document).ready(function(){
                 $('#OrganizerID').val(OrganizerID);  
                 $('#action').val("Edit");
                 $('#operation').val("Edit"); 
-                alert(OrganizerID);
+                // alert(OrganizerID);
             }
         });
     });

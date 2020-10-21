@@ -98,7 +98,7 @@ include('../reports/check_booking_dates.php');
 <script type="text/javascript" language="javascript" >
     $(document).ready(function(){
         var OrganizerID = <?php echo $_GET["OrganizerID"];?>;
-        alert(OrganizerID);
+        // alert(OrganizerID);
         var dataTable = $('#data_table').DataTable({
             "scrollY":        "260px",
             "scrollCollapse": true,
@@ -195,7 +195,7 @@ include('../reports/check_booking_dates.php');
                     $('#GroupID').val(GroupID);  
                     $('#visit_action').val("Edit");
                     $('#visit_operation').val("Edit");
-                    alert(GroupID);
+                    // alert(GroupID);
                 }
             });
         });
