@@ -2,6 +2,6 @@
 Thumbs.db
 npm-debug.log
 /bower_components
-database/*
+database/
 /vendor
 *.sql
